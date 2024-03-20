@@ -66,8 +66,8 @@
   font-size: 18px;
   line-height: 139%;
   position: absolute;
-  top: 22px;
-  right: 43px;
+  top: 20px;
+  right: 51px;
 }
 
 .header__fantom-element::after {
@@ -77,8 +77,8 @@
   height: 9px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  top: 7px;
-  left: 44px;
+  top: 8px;
+  left: 43px;
   box-shadow: 0 0 4px 2px;
 }
 
