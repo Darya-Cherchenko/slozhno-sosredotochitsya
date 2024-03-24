@@ -8,8 +8,19 @@
   --color-text: #353430;
   --accent-color: #ff8dcb;
   --title-decor: #FFC2E6;
-  --color-title: #ffc2e6;
-  --bg-image: url(/images/cover-image-light.png);
+  --color-title: #F1B2CE;
+  --bg-image: url('/images/cover-image-light.png');
+  background-color: var(--color-title);
+}
+
+.theme_light .decorated-zone::before {
+  border-top: 1px solid var(--color-text);
+  border-right: 1px solid var(--color-text);
+}
+
+.theme_light .decorated-zone::after {
+  border-bottom: 1px solid var(--color-text);
+  border-left: 1px solid var(--color-text);
 }
 
 .theme_light .header__text {
@@ -48,10 +59,70 @@
   color: var(--color-text);
 }
 
-.theme_light .content__text {
+.theme_light .content__small-title {
   color: var(--color-text);
 }
 
-.theme_light .content__small-title {
-  color: var(--color-text);
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text: #353430;
+    --accent-color: #ff8dcb;
+    --title-decor: #FFC2E6;
+    --color-title: #ffc2e6;
+    --bg-image: url('/images/cover-image-light.png');
+  }
+
+  .decorated-zone::before {
+    border-top: 1px solid var(--color-text);
+    border-right: 1px solid var(--color-text);
+  }
+  
+  .decorated-zone::after {
+    border-bottom: 1px solid var(--color-text);
+    border-left: 1px solid var(--color-text);
+  }
+  
+  .header__text {
+    color: var(--color-text);
+  }
+  
+  .header__fantom-element {
+    visibility: hidden;
+  }
+  
+  .header__fantom-element::after {
+    visibility: hidden;
+  }
+  
+  .block__title {
+    color: var(--color-text);
+  }
+  
+  .header__theme-menu-button {
+    color: var(--color-text);
+  }
+  
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--color-text);
+  }
+  
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.4);
+  }
+  
+  .header__theme-menu-button_active {
+    border: 1px solid var(--color-text);
+  }
+  
+  .content__title {
+    color: var(--color-text);
+  }
+  
+  .content__text {
+    color: var(--color-text);
+  }
+  
+  .content__small-title {
+    color: var(--color-text);
+  }
 }

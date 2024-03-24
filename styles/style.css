@@ -2,6 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--title-decor);
   background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -9,7 +10,6 @@
   background-size: cover;
   inline-size: 1024px;
   max-width: 100%;
-  overflow: hidden scroll;
 }
 
 .decorated-zone::before {
@@ -39,6 +39,7 @@
   grid-template-rows: repeat(3, 1fr);
   position: relative;
   height: 100vh;
+  min-height: 668px;
   margin-bottom: 60px;
 }
 
@@ -51,7 +52,7 @@
 
 .header__title {
   color: var(--color-title);
-  font-size: 157px;
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   font-family: var(--text-style);
   font-weight: 700;
   line-height: 83%;
@@ -67,8 +68,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 130%;
-  margin: 50px 20px 0 50%;
-  height: 71px;
+  margin: 50px 20px auto 50%;
 }
 
 .header__fantom-element {
@@ -93,6 +93,7 @@
   top: 8px;
   left: 43px;
   box-shadow: 0 0 4px 2px;
+  text-transform: uppercase;
 }
 
 .header__theme-menu-button {
@@ -104,6 +105,7 @@
   height: 26px;
   width: 70px;
   line-height: 18px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
@@ -139,7 +141,6 @@
   font-weight: 700;
   line-height: 130%;
   width: min(100%, 315px);
-  margin-bottom: 20px;
 }
 
 .why__content {
@@ -183,6 +184,11 @@
   border-bottom: 1px solid var(--color-text);
 }
 
+.what {
+  display: grid;
+  gap: 20px;
+}
+
 .what__content {
   display: grid;
   gap: 20px;
@@ -210,7 +216,7 @@
 }
 
 .pictures {
-  padding-bottom: 120px;
+  margin: 0 20px 60px;
 }
 
 .pictures__content {
@@ -247,7 +253,8 @@ img {
 }
 
 .footer {
-  height: 768px;
+  height: 100vh;
+  min-height: 668px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -258,7 +265,7 @@ img {
   color: var(--color-title);
   font-family: var(--text-style);
   font-weight: 700;
-  font-size: 157px;
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 83%;
   text-shadow: 2px 2px var(--accent-color);
 }
@@ -282,13 +289,11 @@ img {
   }
 
   .header__title {
-    font-size: clamp(7.5rem, 0.5895rem + 14.3969vw, 9.8125rem);
     align-self: center;
     padding-bottom: 0;
   }
 
   .header__text {
-    height: 6.5em;
     margin-top: 2.3em;
   }
 
@@ -296,16 +301,16 @@ img {
     width: min(100%, 236px);
   }
 
+  .why__content {
+    width: min(100%, 472px);
+  }
+
   .what__content {
     grid-template-columns: repeat(auto-fill, 100%);
   }
 
-  .pictures {
-    padding-bottom: 60px;
-  }
-
-  .footer__title {
-    font-size: clamp(7.5rem, 0.5895rem + 14.3969vw, 9.8125rem);
+  .how__content {
+    width: min(100%, 472px);
   }
 }
 
@@ -330,7 +335,6 @@ img {
   }
 
   .header__title {
-    font-size: clamp(7.25rem, 7.0108rem + 1.0204vw, 7.5rem);
     margin-left: 10px;
   }
 
@@ -351,7 +355,6 @@ img {
 
   .block__title {
     width: min(100%, 355px);
-    margin-bottom: 0;
   }
 
   .section {
@@ -362,16 +365,12 @@ img {
     flex-direction: column;
   }
 
-  .what__content {
-    margin-top: 20px;
-  }
-
   .how {
     flex-direction: column;
   }
 
   .pictures {
-    padding-bottom: 40px;
+    margin: 0 10px 40px;
   }
 
   .pictures__content {
@@ -398,6 +397,6 @@ img {
   }
 
   .footer {
-    height: 668px;
+    min-height: 668px;
   }
 }
