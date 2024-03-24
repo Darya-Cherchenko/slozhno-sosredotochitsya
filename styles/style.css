@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  inline-size: 1025px;
+  inline-size: 1024px;
   max-width: 100%;
   overflow: hidden scroll;
 }
@@ -185,7 +185,7 @@
 .what__content {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, 315px);
+  grid-template-columns: repeat(auto-fill, 314px);
 }
 
 .how {
