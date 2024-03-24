@@ -39,6 +39,7 @@
   grid-template-rows: repeat(3, 1fr);
   position: relative;
   height: 100vh;
+  margin-bottom: 60px;
 }
 
 .header__theme-menu-list {
@@ -291,6 +292,10 @@ img {
     margin-top: 2.3em;
   }
 
+  .block__title {
+    width: min(100%, 236px);
+  }
+
   .what__content {
     grid-template-columns: repeat(auto-fill, 100%);
   }
@@ -345,6 +350,7 @@ img {
   }
 
   .block__title {
+    width: min(100%, 355px);
     margin-bottom: 0;
   }
 
