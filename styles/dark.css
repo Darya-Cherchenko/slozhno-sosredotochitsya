@@ -5,6 +5,11 @@
 */
 
 .page.theme_dark {
-  background-color: #000028;
+  --color-text: #F1B2CE;
+  --accent-color: #FF0070;
+  --title-decor: #000028;
+  --color-title: #DB00FF;
+  --bg-image: url(/images/cover-image-dark.png);
+  --text-style: 'IBM Plex mono', monospace;
 }
 
