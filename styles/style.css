@@ -290,6 +290,7 @@ img {
 
   .header__title {
     align-self: center;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     padding-bottom: 0;
   }
 
@@ -311,6 +312,10 @@ img {
 
   .how__content {
     width: min(100%, 472px);
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
@@ -336,6 +341,7 @@ img {
 
   .header__title {
     margin-left: 10px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .header__text {
@@ -398,5 +404,9 @@ img {
 
   .footer {
     min-height: 668px;
+  }
+
+  .footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
