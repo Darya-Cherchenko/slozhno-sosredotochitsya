@@ -145,7 +145,7 @@
 .why__content {
   display: grid;
   gap: 20px;
-  width: min(100%, 767px);
+  width: min(100%, 649px);
 }
 
 .content__title {
@@ -197,7 +197,7 @@
 .how__content {
   display: grid;
   gap: 20px;
-  width: min(100%, 767px);
+  width: min(100%, 649px);
 }
 
 .content__small-title {
