@@ -313,7 +313,7 @@ img {
     width: 100%;
   }
 
-  .block__title{
+  .block__title {
     width: min(100%, 365px);
   }
 

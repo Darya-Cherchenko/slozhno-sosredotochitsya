@@ -4,6 +4,22 @@
   переключая тему
 */
 .page.theme_dark {
+  --content-text: #F1B2CE;
+  --accent-color: #FF0070;
+  --title-decor: #000028;
+  --color-title: #DB00FF;
+  --decorated-zone: #FF0070;
+  --menu: #FF0070;
+  --fantom-element: #FF0070;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --bg-image: url('../images/cover-image-dark.png');
+  /*
+  без дублирования переменных не работает переключение тем
+*/
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
     --content-text: #F1B2CE;
     --accent-color: #FF0070;
     --title-decor: #000028;
@@ -13,10 +29,8 @@
     --fantom-element: #FF0070;
     --button-hover: rgba(255, 0, 112, 0.4);
     --bg-image: url('../images/cover-image-dark.png');
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    
+    /*
+  медиа для автоматической определния темы установленной на компьютере
+*/
   }
 }
