@@ -3,10 +3,14 @@
   и их переопределение под различные устройства
 */
 :root {
-  --color-text: #F1B2CE;
+  --content-text: #F1B2CE;
   --accent-color: #FF0070;
   --title-decor: #000028;
   --color-title: #DB00FF;
-  --bg-image: url('/images/cover-image-dark.png');
+  --decorated-zone: #FF0070;
+  --menu: #FF0070;
+  --fantom-element: #FF0070;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --bg-image: url('../images/cover-image-dark.png');
   --text-style: 'IBM Plex mono', monospace;
 }
