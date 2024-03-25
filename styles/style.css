@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-color: var(--title-decor);
+  background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-attachment: fixed;
   background-repeat: no-repeat;

@@ -11,6 +11,7 @@
   --menu: #FF0070;
   --fantom-element: #FF0070;
   --button-hover: rgba(255, 0, 112, 0.4);
+  --bg-color: #000028;
   --bg-image: url('../images/cover-image-dark.png');
   --text-style: 'IBM Plex mono', monospace;
 }

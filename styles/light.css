@@ -12,6 +12,7 @@
   --menu: #353430;
   --fantom-element: transparent;
   --button-hover: rgba(50, 49, 45, 0.4);
+  --bg-color: #fff1f7;
   --bg-image: url('../images/cover-image-light.png');
   /*  без дублирования переменных не работает переключение тем */
 }
@@ -25,6 +26,7 @@
     --color-title: #ffc2e6;
     --menu: #353430;
     --fantom-element: transparent;
+    --bg-color: #fff1f7;
     --button-hover: rgba(50, 49, 45, 0.4);
     --bg-image: url('../images/cover-image-light.png');
   /*   медиа для автоматической определния темы установленной на компьютере */
