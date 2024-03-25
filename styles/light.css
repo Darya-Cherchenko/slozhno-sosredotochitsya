@@ -6,7 +6,6 @@
 .page.theme_light {
   --content-text: #353430;
   --decorated-zone: #353430;
-  --color-text: #353430;
   --accent-color: #ff8dcb;
   --title-decor: #353430;
   --color-title: #ffc2e6;
@@ -14,25 +13,20 @@
   --fantom-element: transparent;
   --button-hover: rgba(50, 49, 45, 0.4);
   --bg-image: url('../images/cover-image-light.png');
-  /*
-  без дублирования переменных не работает переключение тем
-*/
+  /*  без дублирования переменных не работает переключение тем */
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-  --content-text: #353430;
-  --decorated-zone: #353430;
-  --color-text: #353430;
-  --accent-color: #ff8dcb;
-  --title-decor: #353430;
-  --color-title: #ffc2e6;
-  --menu: #353430;
-  --fantom-element: transparent;
-  --button-hover: rgba(50, 49, 45, 0.4);
-  --bg-image: url('../images/cover-image-light.png');
-  /*
-  медиа для автоматической определния темы установленной на компьютере
-*/
+    --content-text: #353430;
+    --decorated-zone: #353430;
+    --accent-color: #ff8dcb;
+    --title-decor: #353430;
+    --color-title: #ffc2e6;
+    --menu: #353430;
+    --fantom-element: transparent;
+    --button-hover: rgba(50, 49, 45, 0.4);
+    --bg-image: url('../images/cover-image-light.png');
+  /*   медиа для автоматической определния темы установленной на компьютере */
   }
 }
