@@ -203,7 +203,7 @@
 .what__content {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, 314px);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .how {
@@ -400,7 +400,7 @@ img {
 
   .pictures__content {
     gap: 10px;
-    grid-template-columns: repeat(1, min(100%, 355px));
+    grid-template-columns: repeat(1, min(100%, 767px));
     grid-template-rows: repeat(auto-fill, min-content);
     margin-block-start: 10px;
   }
